@@ -1,0 +1,22 @@
+//Escriba un programa que lea dos enteros, determine si el primero es un múltiplo del segundo e imprima el resultado.
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	int a;
+	int b;
+	int c;
+	
+	cout<<"ingrese dos numeros\n";
+	cin>>a>>b;
+	c=a%b;
+	
+	if (a>=b&&c==0)
+	cout<<"el numero "<<a<<" es multiplo del numero "<<b<<endl;
+	else if(a<b||c!=0)
+	cout<<"el numero "<<a<<" no es multiplo del numero "<<b<<endl;
+	
+	return 0;
+}
